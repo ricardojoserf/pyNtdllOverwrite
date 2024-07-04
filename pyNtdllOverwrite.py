@@ -1,7 +1,6 @@
 import argparse
 from overwrite import overwrite_disk, overwrite_knowndlls, overwrite_debugproc
 
-
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('-o', '--option', required=True, action='store', help='Option for library overwrite: \"disk\", \"knowndlls\" or \"debugproc\"')
