@@ -7,7 +7,7 @@ It can help to evade security measures that install API hooks such as EDRs.
 The unhooked version of the DLL can be obtained from:
 
 - A DLL file already on disk - For example "C:\Windows\System32\ntdll.dll".
-- The KnownDlls folder - "\KnownDlls\ntdll.dll" for 64-bit processes and "\KnownDlls32\ntdll.dll" for 32-bit processes.
+- The KnownDlls folder ("\KnownDlls\ntdll.dll").
 - A process created in debug mode - Processes created in suspended or debug mode have a clean ntdll.dll.
 
 
@@ -49,4 +49,5 @@ python pyNtdllOverwrite.py -o debugproc [-p PATH]
 
 ### Links
 
-- C# implementation: [SharpNtdllOverwrite](https://github.com/ricardojoserf/SharpNtdllOverwrite)
+- .NET implementation: [SharpNtdllOverwrite](https://github.com/ricardojoserf/SharpNtdllOverwrite)
+- Golang implementation: [goNtdllOverwrite](https://github.com/ricardojoserf/goNtdllOverwrite)
